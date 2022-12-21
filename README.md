@@ -1,2 +1,7 @@
 # ai-charlie.github.io
-main html
+
+## project
+
+[Blog](./blog)
+[Furo Theme](./furo)
+## Links
