@@ -36,7 +36,7 @@ project_entries:
     highlight: CODE
 
 
-useful_project_entries:
+old_project_entries:
   - title: moonwalk
     url: https://github.com/abhinavs/moonwalk
     desc: A fast and minimalist Jekyll blog theme with clean dark mode
