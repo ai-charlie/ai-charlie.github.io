@@ -27,15 +27,15 @@ project_entries:
     desc: papers, datasets, algorithm of Speech Emotion Recognition
     highlight: MD
 
-  - title: Emotion-Recognition
-    url: https://github.com/ai-charlie/Emotion-Recognition
-    desc: My pratices of Speech Emotion Recognition
+  - title: ai-audio
+    url: https://github.com/ai-charlie/ai-audio
+    desc: My pratices of Audio Recognition
     highlight: CODE
 
-  - title: Planet
-    url: https://github.com/ai-charlie/planet
-    desc: markdown docs collection of ai develop、use sphinx.
-    highlight: DOC
+  - title: Torch-Template
+    url: https://github.com/ai-charlie/torch-template
+    desc: My torch train template.
+    highlight: CODE
 
   - title: CodeHub
     url: https://github.com/ai-charlie/codehub
@@ -46,10 +46,12 @@ old_project_entries:
   - title: papers-we-love
     url: https://github.com/papers-we-love/papers-we-love
     desc: Papers We Love (PWL) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the Papers We Love site for more info.
+    highlight: SOTA
 
   - title: ChatGLM-6B
     url: https://github.com/THUDM/ChatGLM-6B
     desc: ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于 General Language Model (GLM) 架构，具有 62 亿参数。结合模型量化技术，用户可以在消费级的显卡上进行本地部署（INT4 量化级别下最低只需 6GB 显存）。 ChatGLM-6B 使用了和 ChatGPT 相似的技术，针对中文问答和对话进行了优化。经过约 1T 标识符的中英双语训练，辅以监督微调、反馈自助、人类反馈强化学习等技术的加持，62 亿参数的 ChatGLM-6B 已经能生成相当符合人类偏好的回答，更多信息请参考我们的博客。
+    highlight: SOTA
 
 footer_entries:
   - title: github
@@ -68,33 +70,22 @@ footer_entries:
     url: https://www.bing.com
 
 misc_entries:
-  - title: this is an example vertical list
-    url: false
-
-  - title: you can show or hide using a boolean flag in _config.yml
-    url: false
-
-  - title: and you can add data in _data/home.yml
-    url: false
-
   - title: Blog posts
-    post_list: true
+    post_list: false
     url: false
 
-  - title: moonwalk on the Internet
+  - title: Intro
     url: false
     entries:
-      - title: on Github
-        url: https://github.com/abhinavs/moonwalk
+      - title: My Github
+        url: https://github.com/ai-charlie
 
-      - title: originally built for abhinav's homepage
-        url: https://www.abhinav.co
-
-      - title: this list is scalable and can be nested
+      - title: Every day show look up new papers
         url: false
         entries:
-          - title: this is nested inside a nested list
+          - title: Affective, Speech, emotion
             url: false
-
-          - title: it is easy to use, see _data/home.yml to see how to configure it.
-            url: false
+          - title: stanford lab1
+            url: https://web.stanford.edu/class/cs124/
+          - title: stanford lab2
+            url: https://web.stanford.edu/~jurafsky/slp3/
