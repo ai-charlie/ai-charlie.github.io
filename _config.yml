@@ -1,15 +1,14 @@
 title: ai-charlie
 author: ai-charlie
 url: ai-charlie.github.io # root address of the site
-description: > # description of the site (multiple lines allowed) # Moonwalk is a fast and elegant Jekyll theme with a clean dark mode. It comes with horizontal list (for navbar and footer), card list (for portfolio), and a generic vertical list. It is very easy to modify in case you want to build over it - please see _layouts/home.html to do that.
-    Simple Personal web based on Jekyll theme Moonwalk.
+description: > # description of the site (multiple lines allowed)
+  Simple Personal web based on Jekyll theme Moonwalk.
 permalink: /:slug
-
 favicon: "./logo.png" # relative path to site's favicon
 
 twitter:
-    username: lecharliestar # update or delete this
-    card: summary_large_image
+  username: lecharliestar # update or delete this
+  card: summary_large_image
 
 #theme: moonwalk # if you are using GitHub Pages, change it to remote_theme: abhinavs/moonwalk
 remote_theme: abhinavs/moonwalk
@@ -21,14 +20,13 @@ theme_config:
   date_format: "%Y-%m-%d" # customize how date is formatted
   show_description: true # show blog description
   show_navbar: true # show horizontal navbar
-  show_misc_list: true
   show_footer: true # show footer links in home page,add in _data/home.yml
   show_copyright: true # show copyright notice in footer
   # following keys are using to create home layout
   show_projects: true # show projects as cards, add in _data/home.yml
   show_blog: false # show blog posts added in _posts
   show_old_projects: true # show old projects as cards, add in _data/home.yml
-  show_misc_list: false # show generic vertical list for misc details, add _data/home.yml
+  show_misc_list: true # show generic vertical list for misc details, add _data/home.yml
   show_reading_time: true # show number of words and reading time in the blog posts
   show_tags: true # show tags in a blog posts
   # options for "home" page
