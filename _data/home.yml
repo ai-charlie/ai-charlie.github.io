@@ -17,14 +17,24 @@ project_entries:
     desc: markdown docs collection of ai develop、use sphinx.
     highlight: DOC
 
-  - title: blog
+  - title: Long-Blog
     url: https://github.com/ai-charlie/blog
     desc: markdown of long blog use furo.
     highlight: DOC
 
-  - title: furo
-    url: https://github.com/ai-charlie/furo
-    desc: Example of docs.
+  - title: Awesome-SER
+    url: https://github.com/ai-charlie/awesome-ser
+    desc: papers, datasets, algorithm of Speech Emotion Recognition
+    highlight: MD
+
+  - title: Emotion-Recognition
+    url: https://github.com/ai-charlie/Emotion-Recognition
+    desc: My pratices of Speech Emotion Recognition
+    highlight: CODE
+
+  - title: Planet
+    url: https://github.com/ai-charlie/planet
+    desc: markdown docs collection of ai develop、use sphinx.
     highlight: DOC
 
   - title: CodeHub
