@@ -5,66 +5,66 @@ navbar_entries:
   - title: blog
     url: blog
 
-  - title: website
-    url: https://www.abhinav.co
+  - title: planet
+    url: planet
+
+  - title: furo
+    url: furo
+
 
 project_entries:
-  - title: Project 1
-    url: overview-post
-    desc: This is an example project, configured in _data/home.yml
+  - title: Planet
+    url: planet
+    desc: markdown of study
+    highlight: DOC
 
-  - title: Project 2
-    url: overview-post
-    desc: Projects are shown in card layout
+  - title: blog
+    url: blog
+    desc: markdown of long blog
+    highlight: DOC
 
-  - title: Project 3
-    url: overview-post
-    desc: You can control visibility from _config.yml file
 
-  - title: Project 4
-    url: overview-post
-    desc: This project uses highlight markup, configured in _data/home.yml
-    highlight: WIP
+  - title: furo
+    url: furo
+    desc: example of docs
+    highlight: DOC
 
-  - title: Project 5
-    url: overview-post
-    desc: Moonwalk also has horizontal list (used in header and footer)
-    highlight: WIP
 
-  - title: Project 6
-    url: overview-post
-    desc: It also has a scalable vertical list (in case you need it)
+  - title: CodeHub
+    url: codehub
+    desc: my most used code
+    highlight: CODE
 
-old_project_entries:
-  - title: Soopr
-    url: https://www.soopr.co
-    desc: Delight your readers - add beautiful share and like buttons easily to your websites 
-    highlight: NEW
 
-  - title: Cookie
-    url: https://github.com/abhinavs/cookie
-    desc: An open source landing website with supporting pages and integrated blog
-
-  - title: Moonwalk
+useful_project_entries:
+  - title: abhinavs/moonwalk
     url: https://github.com/abhinavs/moonwalk
     desc: A fast and minimalist Jekyll blog theme with clean dark mode
 
-  - title: Humangous
-    url: https://www.humangous.co
-    desc: The better people know you, the better they collaborate
+  - title: papers-we-love/papers-we-love
+    url: https://github.com/papers-we-love/papers-we-love
+    desc: Papers We Love (PWL) is a community built around reading, discussing and learning more about academic computer science papers. This repository serves as a directory of some of the best papers the community can find, bringing together documents scattered across the web. You can also visit the Papers We Love site for more info.
+
+  - title: THUDM/ChatGLM-6B
+    url: https://github.com/THUDM/ChatGLM-6B
+    desc: ChatGLM-6B 是一个开源的、支持中英双语的对话语言模型，基于 General Language Model (GLM) 架构，具有 62 亿参数。结合模型量化技术，用户可以在消费级的显卡上进行本地部署（INT4 量化级别下最低只需 6GB 显存）。 ChatGLM-6B 使用了和 ChatGPT 相似的技术，针对中文问答和对话进行了优化。经过约 1T 标识符的中英双语训练，辅以监督微调、反馈自助、人类反馈强化学习等技术的加持，62 亿参数的 ChatGLM-6B 已经能生成相当符合人类偏好的回答，更多信息请参考我们的博客。
+
 
 footer_entries:
-  - title: abhinav's homepage
-    url: https://www.abhinav.co
-
-  - title: twitter
-    url: https://twitter.com/abhinav
-
   - title: github
-    url: https://github.com/abhinavs
+    url: https://github.com/ai-charlie
 
-  - title: feed
-    url: feed.xml
+  - title: huggingface
+    url: huggingface.co/cotcode
+
+  - title: pytorch-docs
+    url: https://pytorch.org/docs/stable/index.html
+
+  - title: pastebin
+    url: https://pastebin.com/
+
+  - title: newbing
+    url: www.bing.com
 
 misc_entries:
   - title: this is an example vertical list
