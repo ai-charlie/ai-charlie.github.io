@@ -2,24 +2,16 @@ navbar_entries:
   - title: about
     url: about
 
-  - title: blog
-    url: blog
-
   - title: planet
-    url: planet
+    url: planet-blog
 
   - title: furo
     url: furo
 
 project_entries:
   - title: Planet
-    url: https://github.com/ai-charlie/planet
+    url: https://github.com/ai-charlie/planet-blog
     desc: markdown docs collection of ai develop、use sphinx.
-    highlight: DOC
-
-  - title: Long-Blog
-    url: https://github.com/ai-charlie/blog
-    desc: markdown of long blog use furo.
     highlight: DOC
 
   - title: Awesome-SER
@@ -27,18 +19,13 @@ project_entries:
     desc: papers, datasets, algorithm of Speech Emotion Recognition
     highlight: MD
 
-  - title: ai-audio
-    url: https://github.com/ai-charlie/ai-audio
-    desc: My pratices of Audio Recognition
-    highlight: CODE
-
   - title: Torch-Template
     url: https://github.com/ai-charlie/torch-template
     desc: My torch train template.
     highlight: CODE
 
   - title: CodeHub
-    url: https://github.com/ai-charlie/codehub
+    url: https://github.com/ai-charlie/codehub-python
     desc: My most used code.
     highlight: CODE
 
