@@ -64,15 +64,16 @@ misc_entries:
   - title: Intro
     url: false
     entries:
-      - title: My Github
-        url: https://github.com/ai-charlie
-
-      - title: Every day show look up new papers
+      - title: Face Recognition
         url: false
         entries:
-          - title: Affective, Speech, emotion
-            url: false
-          - title: stanford lab1
+          - title:  insightface
+            url: https://github.com/deepinsight/insightface
+
+      - title: Speech and Language Processing
+        url: false
+        entries:
+          - title:  stanford cs124
             url: https://web.stanford.edu/class/cs124/
-          - title: stanford lab2
+          - title:  stanford slp3
             url: https://web.stanford.edu/~jurafsky/slp3/
