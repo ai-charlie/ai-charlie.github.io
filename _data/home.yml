@@ -61,19 +61,19 @@ misc_entries:
     post_list: false
     url: false
 
-  - title: Intro
+  - title: Learning
     url: false
     entries:
       - title: Face Recognition
         url: false
         entries:
-          - title:  insightface
+          - title: insightface
             url: https://github.com/deepinsight/insightface
 
       - title: Speech and Language Processing
         url: false
         entries:
-          - title:  stanford cs124
+          - title: stanford cs124
             url: https://web.stanford.edu/class/cs124/
-          - title:  stanford slp3
+          - title: stanford slp3
             url: https://web.stanford.edu/~jurafsky/slp3/
