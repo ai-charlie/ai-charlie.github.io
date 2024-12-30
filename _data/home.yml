@@ -69,6 +69,8 @@ misc_entries:
         entries:
           - title: insightface
             url: https://github.com/deepinsight/insightface
+          - title: Arcface
+            url: https://arxiv.org/abs/1801.07698
 
       - title: Speech and Language Processing
         url: false
