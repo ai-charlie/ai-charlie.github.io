@@ -24,11 +24,6 @@ project_entries:
     desc: My torch train template.
     highlight: CODE
 
-  - title: CodeHub
-    url: https://github.com/ai-charlie/codehub-python
-    desc: My most used code.
-    highlight: CODE
-
 old_project_entries:
   - title: papers-we-love
     url: https://github.com/papers-we-love/papers-we-love
