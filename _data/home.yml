@@ -58,7 +58,7 @@ footer_entries:
 
 misc_entries:
   - title: Blog posts
-    post_list: false
+    post_list: true
     url: false
 
   - title: Learning
