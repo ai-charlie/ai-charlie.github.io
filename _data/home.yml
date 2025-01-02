@@ -19,9 +19,9 @@ project_entries:
     desc: papers, datasets, algorithm of Speech Emotion Recognition
     highlight: MD
 
-  - title: Torch-Template
-    url: https://github.com/ai-charlie/torch-template
-    desc: My torch train template.
+  - title: CPP-Templates
+    url: https://github.com/ai-charlie/cpp-templates
+    desc: My cpp train template. Use makefile to run cpp files in linux/macos.
     highlight: CODE
 
 old_project_entries:
