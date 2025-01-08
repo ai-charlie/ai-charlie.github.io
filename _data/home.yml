@@ -1,17 +1,17 @@
 navbar_entries:
+  - title: home
+    url: home
+
   - title: about
     url: about
 
-  - title: planet
-    url: planet-blog
-
-  - title: furo
-    url: furo
+  - title: blog
+    url: blog
 
 project_entries:
   - title: Planet
     url: https://github.com/ai-charlie/planet-blog
-    desc: markdown docs collection of ai develop、use sphinx.
+    desc: markdown docs、use sphinx.
     highlight: DOC
 
   - title: Awesome-SER
@@ -21,7 +21,7 @@ project_entries:
 
   - title: CPP-Templates
     url: https://github.com/ai-charlie/cpp-templates
-    desc: My cpp train template. Use makefile to run cpp files in linux/macos.
+    desc: My cpp template. Use makefile to run cpp files in linux/macos.
     highlight: CODE
 
 old_project_entries:
