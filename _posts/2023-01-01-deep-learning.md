@@ -1,3 +1,24 @@
+# 人工智能案例学习
+
+- pytorch样例
+  ```
+  git clone  git@github.com:pytorch/examples.git pytorch_examples
+  ```
+- tensorrt样例
+  ```
+  git clone  git@github.com:NVIDIA/retinanet-examples.git
+  ```
+- nvidia样例
+  ```
+  git clone  git@github.com:NVIDIA/DeepLearningExamples.git NVIDIA_DeepLearningExamples
+  ```
+
+# .cuda()与.to(device)的区别
+
+to(device)可以让指定cpu和gpu
+
+cuda只能指定gpu
+
 # 深度学习优化方法
 
 [ML 2021 Spring](https://speech.ee.ntu.edu.tw/~hylee/ml/2021-spring.php)
@@ -31,3 +52,75 @@
 ### 归一化方法
 
 Batch Normalization（批量归一化）据说可以提升效果，其具体的原理和优势可参考论文[http://arxiv.org/abs/1505.00387](http://arxiv.org/abs/1505.00387)。
+
+# torchvision.transforms
+
+## torchvision.transforms.ToTensor()
+
+[pytorch](https://so.csdn.net/so/search?q=pytorch&spm=1001.2101.3001.7020)在加载数据集时都需要对数据记性transforms转换，其中最常用的就是torchvision.transforms.ToTensor()函数，但初学者可以认为这个函数只是把输入数据类型转换为pytorch的Tensor（int64）类型，其实不然，该函数内部的具体转换步骤为：
+
+1、将图片转化成内存中的存储格式；
+
+2、将字节以流的形式输入，转化成Tensor类型；
+
+3、对Tensor进行reshape；
+
+4、对Tensor进行permute（2,0,1），因为pytorch的维度和图片维度不一样；
+
+5、将Tensor中的每个元素除以255；6、输出该Tensor数据。
+
+注：以后用了这个函数之后别再想着给数据在除以255归一化一下了。。。
+
+## torchvision.transforms.ToPILImage()
+
+pytorch在将[Tensor](https://so.csdn.net/so/search?q=Tensor&spm=1001.2101.3001.7020)类型数据转换为图片数据时，需要用到这个torchvision.transforms.ToPILImage()函数，该函数的作用就是把Tensor数据变为完整原始的图片数据（保存后可以直接双击打开的那种），函数内部的具体转换步骤为：
+
+> 1、将Tensor的每个元素乘以255；
+> 2、将数据由Tensor转化成Uint8；
+> 3、将Tensor转化成numpy的ndarray类型；
+> 4、对ndarray对象做permute (1, 2, 0)的转置，因为pytorch的维度和图片维度不一样；
+> 5、将ndarray对象转化成PILImage数据格式；
+> 6、输出该PILImage数据（save后可以直接打开）。
+>
+
+# 分布
+
+## 熵
+
+其中 $H(P)$为熵 (entropy), $H(P, Q) $为 $P$ 和 $Q$的交叉熵 $(cross entropy)$。
+
+在信息论中，熵 $H ( P )$ 表示对来自 $P $ 的随机变量进行编码所需的最小字节数，而交叉熵 $H(P,Q) $则表示使用基于$Q $的编码对来自$P$的变量进行编码所需的字节数。
+
+因此，$KL $散度可认为是使用基于$ Q$的编码对来自 $P$的变量进行编码所需的 “额外” 字节数; 显然，额外字节数必然非负，当且仅当 $P=Q $时额外字节数为零。
+
+## KL散度
+
+又称相对熵或者信息散度，用于度量两个概率分布之间的差异
+
+给定两个概率分布$P$和$Q$，$P$和$Q$之间的$KL$散度为
+
+$$
+KL(P||Q)=\int_{-\infty}^{\infty}p(x)log\frac{p(x)}{q(x)}dx
+$$
+
+$$
+KL(P||Q)=\int_{-\infty}^{\infty}p(x)log{p(x)}dx-\int_{-\infty}^{\infty}p(x)log{q(x)}dx=-H(P)+H(P,Q)
+$$
+
+## 贝叶斯概率
+
+## 高斯分布和混合高斯随机变量
+
+连续型标量随机变量x的概率密度函数
+
+$$
+p(x)=\frac{1}{(2\pi\sigma^2)^\frac{1}{2}}exp[-\frac{1}{2}(\frac{x-\mu}{\sigma})^2]\approx\mathcal{N}(x;\mu,\sigma^2)
+$$
+
+服从高斯分布。
+
+使用精度参数（r=方差的倒数=$\frac{1}{\sigma^2}$,$\sigma=\frac{1}{\sqrt{r}}$）代替方差后，
+
+$$
+p(x)=\sqrt{\frac{r}{2\pi}}exp[-\frac{r}{2}({x-\mu})^2]\approx\mathcal{N}(x;\mu,\sigma^2)
+$$

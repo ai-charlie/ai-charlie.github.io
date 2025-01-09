@@ -1,8 +1,8 @@
-# **计算机学习路线**
+# 计算机学习路线
 
 基于稚晖君分享的学习路线修改
 
-## **数学**
+## 数学
 
 * 离散数学及其应用
 * 矩阵分析与应用
@@ -12,7 +12,7 @@
 * 算法导论
 * 概率论与统计分析
 
-## **理解为主**
+## 理解为主
 
 * 数字设计和计算机体系结构
 * CMOS数字集成电路分析与设计
@@ -38,9 +38,9 @@
 * 深入理解并行编程
 * GPU高性能编程
 * 深入浅出React和Redux
-* [https://python3-cookbook.readthedocs.io/](https://python3-cookbook.readthedocs.io/)
 
-## **实践为主**
+
+## 实践为主
 
 * 自己动手写CPU
 * CPU自制入门
@@ -48,13 +48,13 @@
 * 30天自制操作系统
 * 两周自制脚本语言
 
-## **应用**
+## 应用
 
 * 机器学习
 * 分布式机器学习：算法、理论与实践
 * 强化学习在阿里的技术演进与业务创新
 
-## **软件笔记思路整理**
+## 软件笔记思路整理
 
 * XMind ZEN(思维导图，zen版本更为简洁)
 * markdown
@@ -63,15 +63,15 @@
 * sumatraPDF
 * onenote 笔记
 
-## **电路软件**
+## 电路软件
 
 * AltiumDesigner(AD)：用于绘制电路板
 * eagle(开源硬件界电路设计，偏简单)：转化文件格式
-* fritzing(面包板电路示意图绘制等，文章配图)** **
+* fritzing(面包板电路示意图绘制等，文章配图)
 * allegro、pads(大公司会用的软件(显卡、主板))
 * 绘制简单电路示意图图也可以可以选择网页版TinkerCAD，画电路板这几年有风向kiCAD，也可以试试。
 
-## **结构设计软件**
+## 结构设计软件
 
 * Rhinocores(俗称 犀牛)
 * Fusion360(良心软件，联系学习)
@@ -83,7 +83,7 @@
 * 雕刻机刀路artCAM3D
 * 打印机软件(具体与自己的机器有关)推荐一个Cura
 
-## **软件开发软件**
+## 软件开发软件
 
 * 宇宙第一IDE ：VisualStudio(C++、openCV)
 * ardroidStudio：开发安卓APP
@@ -94,15 +94,15 @@
 * vscode：代码编辑及文档编写
 * Code：ipad&ios 应用商店，主要用于代码查看
 
-## **硬件开发软件**
+## 硬件开发软件
 
 * keil、cubeMX(51单片机、STM32等)
-* arduino IDE(开源硬件扛把子)** **
+* arduino IDE(开源硬件扛把子)
 * KendrytelIDE(开发K210)
 * 软件交互，一个画画的编程语言：processing
 * 数学仿真：Matlab
 
-## **小工具类软件**
+## 小工具类软件
 
 * linux服务器：XShell、XFtp串口、网络调试助手
 * GitGUI：代码版本控制
@@ -114,12 +114,12 @@
 * Netron：图形化查看神经网络
 * beyonCompare：代码修改对比
 
-## **latex文档**
+## latex文档
 
 * Texstudio
 * texlive
 
-## **python 开发时VSCode 插件**
+## python 开发时VSCode 插件
 
 * autoDocing
 * black formatter
@@ -136,14 +136,14 @@
 * vscode-pdf
 * yaml
 
-## **视频编辑**
+## 视频编辑
 
-* handbrake [https://handbrake.fr/downloads.php](https://handbrake.fr/downloads.php)
+* handbrake [https://handbrake.fr/downloads.php]()
 * libvlc/ VLC media player
 * ffmepg
 * opencv
 
-## **音频编辑**
+## 音频编辑
 
 * sox
 * ffmepg
@@ -152,7 +152,7 @@
 * Librosa
 * torchaudio
 
-## **应用开发部署相关**
+## 应用开发部署相关
 
 * 镜像部署平台 k8s
 * 向量数据库 Milvus
@@ -173,3 +173,10 @@
 - eigen
 - cppreference.com
 - cplusplus.com
+
+## Online Courses or Book
+
+* cs61a: [https://cs61a.org]()
+* mathmodel: [https://datawhalechina.github.io/intro-mathmodel/]()
+* python3-cookbook: [https://python3-cookbook.readthedocs.io/]()
+* deeplearningbook-chinese: [https://exacity.github.io/deeplearningbook-chinese/]()

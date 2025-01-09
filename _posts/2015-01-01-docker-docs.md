@@ -10,7 +10,19 @@ Dockerfile: [https://docs.docker.com/build/building/multi-stage/#use-multi-stage
 
 Docker Compose: [https://docs.docker.com/compose/gettingstarted/]()
 
-## Install
+# docker镜像网站
+
+[https://mcr.microsoft.com/en-us/](https://mcr.microsoft.com/en-us/)
+
+[hub.docker.com/](http://hub.docker.com/)
+
+[https://catalog.ngc.nvidia.com/](https://catalog.ngc.nvidia.com/)
+
+[https://ghcr.io]()
+
+好用的镜像
+
+[mcr.microsoft.com/devcontainers/universal:2](http://mcr.microsoft.com/devcontainers/universal:2)
 
 [https://www.docker.com/](https://www.docker.com/)
 
@@ -152,3 +164,29 @@ ubuntu2004 config –default-user torch
     - 通常开头缩进两格
     - 关键字后缩进一格，比如，冒号与逗号后面需要缩进一个字符
     - #表示注释
+
+**示例：**
+
+```
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nginx-deployment
+  labels:
+    app: nginx
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+  template:
+    metadata:
+      labels:
+        app: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx:latest
+        ports:
+        - containerPort: 80
+```

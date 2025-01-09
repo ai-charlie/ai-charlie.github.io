@@ -1,6 +1,4 @@
-# react-native
-
-# React Native 环境配置
+# Win React Native 环境配置
 
 此教程为windows下的React Native安卓开发环境配置，其他环境请参照 RN官网和RN中文网的安装，如果Android Studio 开启提示设置Http Proxy 的同学也可以直接参考本教程的阅读原文。
 
