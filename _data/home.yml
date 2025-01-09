@@ -1,12 +1,22 @@
 navbar_entries:
-  - title: home
-    url: home
+
+  - title: blog
+    url: blog
 
   - title: about
     url: about
 
-  - title: blog
-    url: blog
+  - title: my-github
+    url: https://github.com/ai-charlie
+
+  - title: my-huggingface
+    url: https://huggingface.co/cotcode
+
+  - title: furo
+    url: furo
+
+  - title: planet-blog
+    url: planet-blog
 
 project_entries:
   - title: Planet
@@ -41,11 +51,8 @@ old_project_entries:
     highlight: SOTA
 
 footer_entries:
-  - title: github
-    url: https://github.com/ai-charlie
-
-  - title: huggingface
-    url: https://huggingface.co/cotcode
+  - title: python3-cookbook
+    url: https://python3-cookbook.readthedocs.io/
 
   - title: pytorch-docs
     url: https://pytorch.org/docs/stable/index.html
@@ -53,8 +60,23 @@ footer_entries:
   - title: pastebin
     url: https://pastebin.com/
 
-  - title: newbing
+  - title: bing
     url: https://www.bing.com
+
+  - title: doubao
+    url: https://www.doubao.com
+
+  - title: google-scholar
+    url: http://scholar.google.com
+
+  - title: pubmed
+    url: https://pubmed.ncbi.nlm.nih.gov
+
+  - title: arxiv-cs
+    url: https://arxiv.org/archive/cs
+
+  - title: shortcutfoo
+    url: https://www.shortcutfoo.com/
 
 misc_entries:
   - title: Blog posts
@@ -64,6 +86,11 @@ misc_entries:
   - title: Learning
     url: false
     entries:
+      - title: computer science
+        url: false
+        entries:
+          title:
+
       - title: Face Recognition
         url: false
         entries:
@@ -79,3 +106,17 @@ misc_entries:
             url: https://web.stanford.edu/class/cs124/
           - title: stanford slp3
             url: https://web.stanford.edu/~jurafsky/slp3/
+          - title: Speech and Audio Technology Lab Of Tsinghua University
+            url: http://web.ee.tsinghua.edu.cn/satlab/en/index.htm
+          - title: funasr
+            url: https://github.com/modelscope/FunASR
+
+      - title: CPP Learning
+        url: false
+        entries:
+          - title:  eigen
+            url: https://eigen.tuxfamily.org
+          - title: cppreference.com
+            url: https://cppreference.com
+          - title: cplusplus.com
+            url: https://cplusplus.com
