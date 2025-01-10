@@ -89,8 +89,8 @@ misc_entries:
       - title: computer science
         url: false
         entries:
-          title: llm-cookbook
-          url: https://datawhalechina.github.io/llm-cookbook/#/
+          - title: llm-cookbook
+            url: https://datawhalechina.github.io/llm-cookbook/#/
 
       - title: Face Recognition
         url: false
