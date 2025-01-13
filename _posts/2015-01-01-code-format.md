@@ -1,3 +1,97 @@
+## 提交前代码使用pre-commit统一格式化代码
+
+`.pre-commit-config.yaml` 是用于配置 pre-commit 工具的文件。pre-commit 是一个在代码提交前运行一系列检查和格式化任务的工具，它有助于确保代码质量、遵循编码规范、避免一些常见错误进入版本控制系统，以下是对其常见内容和使用方法的详细介绍：
+
+**一、文件结构**
+
+`.pre-commit-config.yaml` 文件通常采用 YAML 格式，基本结构包含 `repos`（仓库）和 `hooks`（钩子）两大部分：
+
+```yaml
+repos:
+  - repo: 仓库地址
+    rev: 版本号或提交哈希
+    hooks:
+      - id: 钩子唯一标识
+        name: 钩子名称
+        description: 简要描述
+        entrypoint: 可执行程序路径
+        args: 执行参数
+        language: 运行语言
+        files: 作用的文件类型或路径
+        exclude_files: 排除的文件类型或路径
+```
+
+**二、常用配置项说明**
+
+1. `repos`：
+
+   - `repo`：指定要获取钩子脚本的代码仓库地址，可以是公共的 GitHub、GitLab 等仓库，例如 `https://github.com/pre-commit/pre-commit-hooks`，这里存放了很多通用的预提交钩子脚本。
+   - `rev`：对应的是该仓库的一个版本号或提交哈希，用于确定获取的钩子脚本版本，确保稳定性与可重复性，比如 `v2.0.0`。
+2. `hooks`：
+
+   - `id`：在当前配置文件中唯一标识一个钩子，便于管理与查找，不同的钩子有不同的 `id`，如 `flake8` 用于代码风格检查，`black` 用于代码格式化。
+   - `name`：给钩子一个人类可读的名称，方便理解其作用，像 `Check code style with flake8` 这样直观表述。
+   - `description`：简短介绍钩子功能，辅助用户了解，例如 `Ensures code conforms to PEP8 style guidelines` 说明 `flake8` 钩子确保代码符合 PEP8 风格规范。
+   - `entrypoint`：指向执行具体任务的可执行程序路径，如果是 Python 脚本，通常是 `python -m 模块名` 形式，比如 `python -m flake8`。
+   - `args`：传递给 `entrypoint` 的执行参数，可定制化钩子的具体行为，如 `flake8` 可能有 `--max-line-length=120` 来限定每行代码长度。
+   - `language`：钩子运行所使用的语言，常见的有 `python`、`shell` 等，这决定了 `pre-commit` 在执行时需要准备的运行环境。
+   - `files`：明确该钩子作用的文件类型或路径范围，可用通配符，如 `*.py` 表示作用于所有 Python 文件，`src/*.java` 表示仅作用于 `src` 目录下的 Java 文件。
+   - `exclude_files`：与 `files` 相反，指定不被该钩子处理的文件，同样能用通配符，如 `test/*` 排除测试目录下的文件不做处理。
+
+**三、示例配置**
+
+以下是一个简单但实用的 `.pre-commit-config.yaml` 配置示例，用于 Python 项目：
+
+```yaml
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.4.0
+    hooks:
+      - id: trailing-whitespace
+        name: Remove trailing whitespace
+        description: Removes trailing whitespace from files.
+        entrypoint: python -m pre-commit-hooks.trailing_whitespace
+        files: "*.py"
+      - id: end-of-file-fixer
+        name: Fix end of file newline
+        description: Ensures files end with a newline.
+        entrypoint: python -m pre-commit-hooks.end_of_file_fixer
+        files: "*.py"
+  - repo: https://github.com/psf/black
+    rev: v23.7.0
+    hooks:
+      - id: black
+        name: Format Python code
+        description: Formats Python code using Black.
+        entrypoint: python -m black
+        args: ["--line-length", "120"]
+        files: "*.py"
+  - repo: https://github.com/pyer/fmt
+    rev: v0.1.0
+    hooks:
+        - id: fmt
+        name: Format Python code
+        description: Formats Python code using fmt.
+        entrypoint: python -m fmt
+        args: ["--style", "pep8"]
+        files: "*.py"
+```
+
+在这个示例中：
+
+- 从 `pre-commit/pre-commit-hooks` 仓库获取了 `trailing-whitespace` 和 `end-of-file-fixer` 两个钩子，分别用于去除 Python 文件末尾的空格和确保文件以换行符结尾。
+- 从 `psf/black` 仓库引入 `black` 钩子，按照每行 120 字的标准格式化 Python 代码。
+- 从 `pyer/fmt` 仓库拿来 `fmt` 钩子，依据 PEP8 风格格式化 Python 代码。
+
+**四、使用步骤**
+
+1. 安装 pre-commit：在项目根目录下，运行 `pip install pre-commit`。
+2. 配置 `.pre-commit-config.yaml`：按照上述方法编写或修改配置文件，适配项目需求。
+3. 安装钩子：在项目根目录下执行 `pre-commit install`，这会在本地 `.git` 目录下创建一些脚本链接，用于在代码提交前触发相应检查与格式化操作。
+4. 日常使用：之后每次在项目根目录下执行 `git commit` 时，`pre-commit` 工具就会按照配置文件中的要求，对即将提交的代码进行检查、格式化等操作。如果代码不符合要求，提交将会被阻止，并提示需要修正的问题，直到代码通过所有预提交检查，才能成功提交。
+
+通过合理配置 `.pre-commit-config.yaml` 文件并有效利用 `pre-commit` 工具，可以大幅提升代码质量，减少低级错误进入版本控制系统，让团队开发更加高效、规范。
+
 ## 使用flake8 配置代码格式化
 
 下载 flake8 插件
