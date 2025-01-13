@@ -12,12 +12,6 @@ navbar_entries:
   - title: my-huggingface
     url: https://huggingface.co/cotcode
 
-  - title: furo
-    url: furo
-
-  - title: planet-blog
-    url: planet-blog
-
 project_entries:
   - title: Planet
     url: https://github.com/ai-charlie/planet-blog
