@@ -10,7 +10,7 @@ navbar_entries:
     url: https://github.com/ai-charlie
 
   - title: my-huggingface
-    url: https://huggingface.co/cotcode
+    url: https://huggingface.co/ai-charlie
 
 project_entries:
   - title: Planet
